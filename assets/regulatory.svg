@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="600" height="380">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#eff6ff"></stop>
+      <stop offset="100%" style="stop-color:#dbeafe"></stop>
+    </linearGradient>
+    <linearGradient id="ceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a"></stop>
+      <stop offset="100%" style="stop-color:#1d4ed8"></stop>
+    </linearGradient>
+    <linearGradient id="fdaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a"></stop>
+      <stop offset="100%" style="stop-color:#0369a1"></stop>
+    </linearGradient>
+    <linearGradient id="cdscoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#166534"></stop>
+      <stop offset="100%" style="stop-color:#15803d"></stop>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(30,58,138,0.18)"></feDropShadow>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
+      <feMerge><feMergeNode in="blur"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="600" height="380" fill="url(#bgGrad)"></rect>
+  
+  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+    <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(37,99,235,0.06)" stroke-width="0.8"></path>
+  </pattern>
+  <rect width="600" height="380" fill="url(#grid)"></rect>
+
+  
+  <text x="300" y="42" font-family="Arial,sans-serif" font-size="15" fill="#1e3a8a" text-anchor="middle" font-weight="700" letter-spacing="2">REGULATORY CERTIFICATIONS</text>
+  <line x1="100" y1="52" x2="500" y2="52" stroke="#2563eb" stroke-width="1" opacity="0.3"></line>
+
+  
+  <rect x="40" y="68" width="155" height="190" rx="16" fill="url(#ceGrad)" filter="url(#cardShadow)"></rect>
+  
+  
+  <path d="M 118 108 A 45 45 0 1 0 118 218" fill="none" stroke="white" stroke-width="16" stroke-linecap="round"></path>
+  
+  <line x1="125" y1="108" x2="125" y2="218" stroke="white" stroke-width="16" stroke-linecap="round"></line>
+  
+  <line x1="125" y1="108" x2="175" y2="108" stroke="white" stroke-width="16" stroke-linecap="round"></line>
+  
+  <line x1="125" y1="163" x2="168" y2="163" stroke="white" stroke-width="16" stroke-linecap="round"></line>
+  
+  <line x1="125" y1="218" x2="175" y2="218" stroke="white" stroke-width="16" stroke-linecap="round"></line>
+  
+  <rect x="52" y="222" width="131" height="26" rx="8" fill="rgba(255,255,255,0.15)"></rect>
+  <text x="117" y="240" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="700" letter-spacing="1">CE MDR 2017/745</text>
+
+  
+  <rect x="222" y="68" width="155" height="190" rx="16" fill="url(#fdaGrad)" filter="url(#cardShadow)"></rect>
+  
+  <path d="M 300 90 L 358 115 L 358 185 Q 358 215 300 230 Q 242 215 242 185 L 242 115 Z" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"></path>
+  
+  <text x="300" y="152" font-family="Arial,sans-serif" font-size="36" fill="white" text-anchor="middle" font-weight="900" letter-spacing="1">FDA</text>
+  <line x1="250" y1="162" x2="350" y2="162" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"></line>
+  <text x="300" y="180" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.9)" text-anchor="middle" letter-spacing="0.5">U.S. FOOD &amp; DRUG</text>
+  <text x="300" y="192" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.9)" text-anchor="middle" letter-spacing="0.5">ADMINISTRATION</text>
+  
+  <rect x="234" y="222" width="131" height="26" rx="8" fill="rgba(255,255,255,0.15)"></rect>
+  <text x="299" y="240" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="700" letter-spacing="1">FDA 510(k)</text>
+
+  
+  <rect x="404" y="68" width="155" height="190" rx="16" fill="url(#cdscoGrad)" filter="url(#cardShadow)"></rect>
+  
+  <circle cx="481" cy="155" r="52" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"></circle>
+  <circle cx="481" cy="155" r="40" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1"></circle>
+  
+  <rect x="476" y="115" width="10" height="80" rx="4" fill="rgba(255,255,255,0.8)"></rect>
+  <rect x="456" y="148" width="50" height="10" rx="4" fill="rgba(255,255,255,0.8)"></rect>
+  <text x="481" y="103" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.8)" text-anchor="middle" letter-spacing="0.5">INDIA</text>
+  
+  <rect x="416" y="222" width="131" height="26" rx="8" fill="rgba(255,255,255,0.15)"></rect>
+  <text x="481" y="240" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="700" letter-spacing="1">CDSCO MDR</text>
+
+  
+  <rect x="60" y="278" width="100" height="32" rx="10" fill="rgba(37,99,235,0.12)" stroke="#2563eb" stroke-width="1"></rect>
+  <text x="110" y="299" font-family="Arial,sans-serif" font-size="11" fill="#1e3a8a" text-anchor="middle" font-weight="700">DHF / DHR</text>
+  <rect x="175" y="278" width="100" height="32" rx="10" fill="rgba(37,99,235,0.12)" stroke="#2563eb" stroke-width="1"></rect>
+  <text x="225" y="299" font-family="Arial,sans-serif" font-size="11" fill="#1e3a8a" text-anchor="middle" font-weight="700">V &amp; V / IQ OQ</text>
+  <rect x="290" y="278" width="100" height="32" rx="10" fill="rgba(37,99,235,0.12)" stroke="#2563eb" stroke-width="1"></rect>
+  <text x="340" y="299" font-family="Arial,sans-serif" font-size="11" fill="#1e3a8a" text-anchor="middle" font-weight="700">Risk Mgmt</text>
+  <rect x="405" y="278" width="100" height="32" rx="10" fill="rgba(37,99,235,0.12)" stroke="#2563eb" stroke-width="1"></rect>
+  <text x="455" y="299" font-family="Arial,sans-serif" font-size="11" fill="#1e3a8a" text-anchor="middle" font-weight="700">UDI / Labeling</text>
+
+  
+  <text x="300" y="345" font-family="Arial,sans-serif" font-size="12" fill="#2563eb" text-anchor="middle" opacity="0.8" font-style="italic">Full technical documentation from concept to certification</text>
+</svg>
