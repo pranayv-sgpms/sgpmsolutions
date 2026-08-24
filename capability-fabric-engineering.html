@@ -39,12 +39,9 @@
     </div>
   </header>
 
-  <section style="position:relative;background:#05080b;overflow:hidden">
-    <div style="position:absolute;inset:0;opacity:.8;animation:sg-rise 1.6s cubic-bezier(.2,.7,.2,1) both">
-      <img src="assets/fabric-stitching.png" alt="Industrial machine stitching an elastic band" style="width:100%;height:100%;object-fit:cover;object-position:58% 55%">
-    </div>
-    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,8,11,.95) 0%,rgba(5,8,11,.7) 44%,rgba(5,8,11,.15) 82%)"></div>
-    <div style="position:relative;max-width:1560px;margin:0 auto;padding:clamp(56px,9vh,116px) clamp(20px,4vw,64px) clamp(50px,7vh,96px);min-height:min(68vh,660px);display:flex;flex-direction:column;justify-content:flex-end">
+  <section style="background:#05080b;position:relative;overflow:hidden">
+    <div style="position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(111,178,245,.055) 0 1px,transparent 1px 104px)"></div>
+    <div style="position:relative;max-width:1560px;margin:0 auto;padding:clamp(52px,8vh,104px) clamp(20px,4vw,64px) clamp(44px,6vh,84px)">
       <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:#6fb2f5;animation:sg-rise .9s cubic-bezier(.2,.7,.2,1) both">Capability 03 of 12</span>
       <h1 style="font-size:clamp(38px,6.6vw,96px);font-weight:600;line-height:.94;letter-spacing:-.03em;text-transform:uppercase;margin:16px 0 0;color:#ffffff;max-width:17ch;animation:sg-rise 1s cubic-bezier(.2,.7,.2,1) .1s both">Fabric engineering</h1>
       <p style="font-size:clamp(16px,1.3vw,19px);line-height:1.6;color:#b9c7d5;margin:22px 0 0;max-width:54ch;text-wrap:pretty;animation:sg-rise 1s cubic-bezier(.2,.7,.2,1) .22s both">Band and garment construction engineered as part of the device: knit selection, patterning, conductive routing, and the joint where textile meets electronics.</p>
@@ -60,15 +57,16 @@
         </div>
         <p style="font-size:16px;line-height:1.7;color:#5d6b78;margin:0;max-width:50ch;text-wrap:pretty">Width, elastic content and stitch construction decide whether a device stays in position for eight hours or migrates in twenty minutes. Stitching is done in a controlled room on industrial machines, to a specification, not by eye.</p>
       </div>
-      <img src="assets/womens-band-product.png" alt="Finished band with over-moulded sensor module" style="display:block;width:min(100%,760px);height:auto;margin-bottom:clamp(28px,3.4vw,52px)">
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr))">
-        <sc-for list="{{ construction }}" as="c" hint-placeholder-count="6">
-          <div style="padding:clamp(18px,2vw,26px) 18px clamp(4px,1vw,10px) 0;border-top:1px solid rgba(10,14,18,.14);display:flex;flex-direction:column;gap:9px">
-            <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:.18em;color:#0d5bd6">{{ c.n }}</span>
-            <span style="font-size:15px;font-weight:500;line-height:1.2;color:#0a0e12">{{ c.title }}</span>
-            <span style="font-size:13px;line-height:1.55;color:#5d6b78">{{ c.note }}</span>
-          </div>
-        </sc-for>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(24px,4vw,64px);align-items:start">
+        <img src="assets/fabric-stitching.png" alt="Industrial machine stitching an elastic band" style="display:block;width:100%;height:auto">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:0 clamp(20px,3vw,44px)">
+          <sc-for list="{{ construction }}" as="c" hint-placeholder-count="6">
+            <div style="padding:clamp(14px,1.6vw,20px) 0;border-top:1px solid rgba(10,14,18,.14);display:flex;flex-direction:column;gap:6px">
+              <span style="font-size:15px;font-weight:500;line-height:1.2;color:#0a0e12">{{ c.title }}</span>
+              <span style="font-size:13px;line-height:1.55;color:#5d6b78">{{ c.note }}</span>
+            </div>
+          </sc-for>
+        </div>
       </div>
     </div>
   </section>
