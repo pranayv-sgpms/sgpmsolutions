@@ -35,6 +35,7 @@
       <nav style="display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:8px 28px;min-width:0">
         <a data-nav-link href="#capabilities" style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.74);transition:color .4s ease" style-hover="color:#6fb2f5">Capabilities</a>
         <a data-nav-link href="#products" style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.74);transition:color .4s ease" style-hover="color:#6fb2f5">Products</a>
+        <a data-nav-link href="soothemotion.html" style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:.08em;color:#9ccbff">SootheMotion · Early access</a>
         <a data-nav-link href="#facilities" style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.74);transition:color .4s ease" style-hover="color:#6fb2f5">Facilities</a>
         <a data-nav-link href="#quality" style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.74);transition:color .4s ease" style-hover="color:#6fb2f5">Quality</a>
         <a data-nav-cta href="#contact" style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:#05080b;background:#ffffff;padding:12px 24px;border-radius:999px;white-space:nowrap;transition:background .4s ease,color .4s ease" style-hover="background:#6fb2f5;color:#05080b">Contact</a>
@@ -102,7 +103,7 @@
     <div style="max-width:1560px;margin:0 auto;padding:clamp(60px,8vw,132px) clamp(20px,4vw,64px)">
       <div data-reveal style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:14px 40px;margin-bottom:clamp(30px,4vw,58px)">
         <h2 style="font-size:clamp(26px,3vw,46px);font-weight:600;line-height:1.02;letter-spacing:-.025em;text-transform:uppercase;margin:0;color:#0a0e12">Products</h2>
-        <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#5d6b78;max-width:40ch">Built to partner specification · client names withheld</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#5d6b78;max-width:40ch">Our products &amp; partner programmes · client names withheld</span>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(clamp(190px,20vw,300px),1fr));gap:clamp(18px,2.4vw,34px)">
         <sc-for list="{{ work }}" as="w" hint-placeholder-count="4">
@@ -358,6 +359,7 @@ class Component extends DCLogic {
         {n:'12', title:'Regulatory affairs', note:'FDA · CE MDR · CDSCO', href:'capability-regulatory-affairs.html'}
       ],
       work: this.withImages([
+        {n:'EA', img:'assets/soothemotion/colours.webp', href:'soothemotion.html', kicker:'Our product · Early access', title:'SootheMotion', desc:'App-controlled back massage &amp; scratching. ₹3,999 early access · 500-unit pilot batch. Working prototype complete; target dispatch January 2027. Explore the prelaunch.'},
         {n:'01', img:'assets/womens-band-product.png', href:'womens-health-wearable.html', kicker:'Fabric wearable', title:'Women\u2019s health wearable', desc:'A soft-band wearable with an over-moulded sensor module, delivered end to end.'},
         {n:'02', img:'assets/vitals-patch-product.png', href:'clinical-wearable-platform.html', kicker:'Body-worn platform', title:'Clinical wearable platform', desc:'A chest-worn platform pairing a sealed reusable module with a disposable adhesive carrier.'},
         {n:'03', img:'assets/ecg-device.png', href:'ecg-wearable-device.html', kicker:'Cardiac monitoring', title:'ECG wearable device', desc:'A handheld ECG recorder with snap-on electrodes, live waveform and a paired companion app.'},
